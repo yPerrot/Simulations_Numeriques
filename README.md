@@ -3,20 +3,20 @@
 Projet étudiant visant à appliquer les connaisances apprisent durant les cours de Probabilités & Statistique et de Cryptographie.
 
 ## Installation
-```py
-$ python -m pip install -U pip
-$ python -m pip install -U numpy
-$ python -m pip install -U matplotlib
+```bash
+python -m pip install -U pip
+python -m pip install -U numpy
+python -m pip install -U matplotlib
 ```
 
 ## Lancement des exercices
-```py
+```bash
 # Exercice 1 
-$ python ./src/Exo1_Chiffrement_RSA.py
+python ./src/Exo1_Chiffrement_RSA.py
 # Exercice 2 
-$ python ./src/Exo2_loi_grands_nombres.py
+python ./src/Exo2_loi_grands_nombres.py
 # Exercice 3 
-$ python ./src/Exo3_Marche_Aleatoire.py
+python ./src/Exo3_Marche_Aleatoire.py
 ```
 
 ## A Faire 
