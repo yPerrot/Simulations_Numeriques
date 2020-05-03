@@ -103,29 +103,19 @@ def acceleration(temps,n):
 
     cf. cours "Chap 3 - Convergences stochastiques" p.5
 
-    E(Xn) = mu ; V(Xn) = sigma²
-    Sn = X1 + X2 + ... + Xn
+    D'après le théorème central limite, la loi normale N(E(X(n)), V(X(n))) est une bonne approximation de la loi de X, quand n tend vers +Inf
 
-    pour n ----> +Inf
-    Zn ----> N(0,1)
+    E(X(n)) = 0
 
-    Zn = (Sn - n*mu) / ( sqrt(n) * sigma)
-
-    Dans notre cas : 
-    cf. photos
-
-    X(nT) = B sqrt(T) ( 2 * Sn - n)         s² = a * T
-    E(X(nT)) = 0 
-    V(X(nT)) = n * s²       sigma² = n * s² = n * a * T
-                            sigma = sqrt( n * a * T)
-
-    Sn = SUM X(nT)
-
-
-    Zn = (Sn - n*mu) / ( sqrt(n) * sigma )           n * mu = n * 0 = 0
-    Zn = (Sn) / ( sqrt(n) * sqrt(n * a * T )) 
-    Zn = (Sn) / ( n * sqrt( a * T )) 
+    V(X(n)) = n*s² => s² = a*T
+            = n*a*T
+            = a*t
     
+    X(n) suit donc une loi proportionnelle à la loi normale N(0,t), ou la loi normale N(0,sqrt(t)) si on prend l'écart-type en deuxème paramètre (plutot que la variance).
+
+    En effet : 
+    Ecart-type  = sqrt( Variace ) avec Variace = t
+                = sqrt( t )
 
 """
 
