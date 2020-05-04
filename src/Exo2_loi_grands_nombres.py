@@ -64,5 +64,5 @@ def q2(N) :
     plt.show() 
 
 if __name__ == "__main__" :
-    print(q2(100))
+    q2(100)
     pass

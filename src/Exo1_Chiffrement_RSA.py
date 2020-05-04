@@ -39,7 +39,6 @@ def expo_rapido_modulo(a, b, modulo) :
 """
 2) Ecrire un programme du calcul des coefficients de Bezout
 """
-# http://aalami.e-monsite.com/medias/files/fonction-python-fournissant-les-coefficients-de-bezout.pdf
 def calculCoefBezout(a,b) :
 	if b == 0 :
 		return (1,0)

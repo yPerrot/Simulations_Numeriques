@@ -40,20 +40,18 @@ def marcheAleatoire(step, n) :
     plt.plot(x,y, linewidth=1)
     
     # Espérance + Variance 
-
-    # p = 1/2
-    # E = n * (2*p - 1)
-    # V = n*4*p * (1 - p) * step**2  
-    # plt.axhline(E + V, linewidth=1)
-    # plt.axhline(E, linewidth=1)
-    # plt.axhline(E - V, linewidth=1)
+    p = 1/2
+    E = n * (2*p - 1)
+    V = n*4*p * (1 - p) * step**2  
+    plt.axhline(E + V, linewidth=1)
+    plt.axhline(E, linewidth=1)
+    plt.axhline(E - V, linewidth=1)
 
     plt.grid()
     plt.show() 
 
 """
 4) Calculer l’espérance de X. Est-ce bien ce que l’on observe sur les trajectoires ?  Faire de même avec la variance.
-TODO 
     p = 1/2
     E = n * (2*p - 1)
     V = n*4*p * (1 - p) * step**2  
@@ -82,6 +80,7 @@ Partie 2
 6)  Représenter des trajectoires de X, pour n fixé, et pour T de plus en plus petit.
     Plus T est petit, plus le step est petit, et donc moins la courbe varie 
 """
+# Compare avec une marche aléatoire avec un temps normal (T=1) et une marche aléatoire avec un temps très faible (T=0.01) 
 def comparaison():
     #You need to close the first window to acced to the second 
     n = 1000
@@ -91,10 +90,7 @@ def comparaison():
     acceleration(temps,n)
 
 def acceleration(temps,n):
-    #TODO: found alpha value 
-    alpha = 1
-
-    step = (alpha * temps)**0.5
+    step = (temps)**0.5
     marcheAleatoire(step, n)
 
 """
@@ -120,6 +116,5 @@ def acceleration(temps,n):
 """
 
 if __name__ == "__main__" :
-    print("OK")
     comparaison()
 
